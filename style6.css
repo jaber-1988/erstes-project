@@ -1,0 +1,99 @@
+.flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+text-align: center;
+  margin: 5px;
+  
+}
+
+.ein , .zwei , .drei {
+  flex:1;
+  margin: 10px;
+  background-color: darkgray;
+  text-align: center;
+}
+.zwei{
+  background-color: red;
+  flex:2;
+}
+.flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5px;
+}
+.one , .tow {
+   background: darkgray;
+   flex: 1;
+   margin: 5px ;
+   text-align: center;
+}
+.flex3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+.a ,.b {
+  background-color: darkgray;
+  flex: 1;
+  margin: 5px;
+}
+p {
+  background-color: cyan;
+  margin: 5px;
+  padding: 5px;
+}
+img {
+  padding:5px;
+  border: 5px solid cyan ;
+}
+@media (max-width:688px) /* Alles kleiner als 688 Pixel*/
+  {
+    .flex1,.flex2,.flex3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  .ein , .zwei ,.drei ,.one ,.tow {
+    width: 100%;
+      background-color: cyan;
+  }
+  .zwei {
+    background-color: darkblue;
+  }
+  .flex3 {
+    flex-direction:column;
+  }
+  p {
+    background-color: darkgreen;
+  }
+  .a {
+    background-color: cyan;
+  }
+  .b {
+      margin:20px 0;
+      background-color: cyan;
+      width: 100%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media(min-width: 1312px){ /* Alles größer als 1312 Pixel*/
+
+}
+@media (max-width:992px) and (min-width:688px){ /* Zwischen 688 Pixel und 992 Pixel*/
+
+}
+@media (max-width:1312px) and (min-width:992px){ /* Zwischen 992 Pixel und 1312 Pixel*/
+
+}
+
+
